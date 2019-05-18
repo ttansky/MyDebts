@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DebtAdded" representedClassName=".DebtAdded" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="comment" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="debtor" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="parentPerson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="debts" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName=".Person" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="avatar" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="dateCreated" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="debtor" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="timeLeft" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="debts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DebtAdded" inverseName="parentPerson" inverseEntity="DebtAdded" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DebtAdded" positionX="-98.265625" positionY="-133.09765625" width="128" height="118"/>
+        <element name="Person" positionX="-480.25" positionY="-200.22265625" width="128" height="150"/>
+    </elements>
+</model>

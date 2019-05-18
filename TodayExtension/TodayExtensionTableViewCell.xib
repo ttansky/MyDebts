@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="todayCell" rowHeight="268" id="Sdv-Tr-b9B" customClass="TodayExtensionTableViewCell" customModule="TodayExtension" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Sdv-Tr-b9B" id="ppc-3a-GjA">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f8y-KE-svT">
+                        <rect key="frame" x="5" y="5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="dsy-JQ-8ur"/>
+                            <constraint firstAttribute="height" constant="45" id="z2f-Jt-rpD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" text="Adam Sandler" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUk-dB-5hR">
+                        <rect key="frame" x="58" y="5" width="151" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="20 UAH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBc-hf-wB6" userLabel="Amount Label">
+                        <rect key="frame" x="58" y="29" width="60" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No return dates added yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFG-qN-C6U" userLabel="No dates Label">
+                        <rect key="frame" x="42" y="15" width="237" height="24"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2d left" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMw-Wn-Iph" userLabel="Date Label">
+                        <rect key="frame" x="223" y="18" width="90" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="avo-AS-I65"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f8y-KE-svT" firstAttribute="top" secondItem="ppc-3a-GjA" secondAttribute="top" constant="5" id="Ffo-kN-fpo"/>
+                    <constraint firstItem="f8y-KE-svT" firstAttribute="leading" secondItem="ppc-3a-GjA" secondAttribute="leading" constant="5" id="G9i-pU-nOc"/>
+                    <constraint firstItem="gMw-Wn-Iph" firstAttribute="leading" secondItem="GUk-dB-5hR" secondAttribute="trailing" constant="1" id="IXW-Ac-vTK"/>
+                    <constraint firstAttribute="bottom" secondItem="f8y-KE-svT" secondAttribute="bottom" constant="5" id="NCV-Ag-nfD"/>
+                    <constraint firstItem="GUk-dB-5hR" firstAttribute="top" secondItem="ppc-3a-GjA" secondAttribute="topMargin" constant="2" id="Ptd-OJ-9Lr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gMw-Wn-Iph" secondAttribute="bottom" constant="5" id="RC8-ak-n28"/>
+                    <constraint firstAttribute="bottom" secondItem="dBc-hf-wB6" secondAttribute="bottom" constant="2" id="UqM-Ep-zWh"/>
+                    <constraint firstItem="gMw-Wn-Iph" firstAttribute="top" secondItem="ppc-3a-GjA" secondAttribute="topMargin" constant="5" id="YRy-4N-fxf"/>
+                    <constraint firstItem="dBc-hf-wB6" firstAttribute="leading" secondItem="f8y-KE-svT" secondAttribute="trailing" constant="8" id="hXE-3w-ma0"/>
+                    <constraint firstItem="GUk-dB-5hR" firstAttribute="leading" secondItem="f8y-KE-svT" secondAttribute="trailing" constant="8" id="vLe-ar-0Cc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gMw-Wn-Iph" secondAttribute="trailing" id="zqr-uT-1A2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="5rO-aE-dPY"/>
+            <connections>
+                <outlet property="NameLabel" destination="GUk-dB-5hR" id="HyE-ln-D60"/>
+                <outlet property="NoDatesLabel" destination="yFG-qN-C6U" id="fQR-Vy-75A"/>
+                <outlet property="amountLabel" destination="dBc-hf-wB6" id="GUU-8e-XuT"/>
+                <outlet property="avatarImageView" destination="f8y-KE-svT" id="5vH-vF-dpD"/>
+                <outlet property="dateLabel" destination="gMw-Wn-Iph" id="N8y-37-FGU"/>
+            </connections>
+            <point key="canvasLocation" x="224.63768115942031" y="46.540178571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
